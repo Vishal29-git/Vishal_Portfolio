@@ -57,7 +57,7 @@ export default function Portfolio() {
     },
     {
       title: 'Firebase Auth System',
-      category: 'backend',
+      category: 'frontend',
       tech: ['Firebase', 'React.js', 'OAuth 2.0'],
       description: 'Secure authentication supporting email/password and Google sign-in with 99% success rate. Reduced failed logins by 75%.',
       metrics: [
@@ -67,7 +67,60 @@ export default function Portfolio() {
         { label: 'Error Reduction', value: '75%' }
       ],
       gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
-    }
+    },
+    {
+      title: 'GVR Grill Works- Business Portfolio',
+      category: 'frontend',
+      tech: ['Firebase', 'React.js', 'OAuth 2.0'],
+      description: ' Designed and deployed a responsive business website with structured navigation, gallery sections, and Google Maps integration to improve user engagement.',
+      metrics: [
+        { label: 'Success Rate', value: '99%' },
+        { label: 'Auth Types', value: 'OAuth 2.0' },
+        { label: 'Users', value: '500+' },
+        { label: 'Error Reduction', value: '75%' }
+      ],
+      gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
+    },
+    {
+      title: 'GVR Grill Works- Business Portfolio',
+      category: 'frontend',
+      tech: ['Firebase', 'React.js', 'OAuth 2.0'],
+      description: ' Designed and deployed a responsive business website with structured navigation, gallery sections, and Google Maps integration to improve user engagement.',
+      metrics: [
+        { label: 'Success Rate', value: '99%' },
+        { label: 'Auth Types', value: 'OAuth 2.0' },
+        { label: 'Users', value: '500+' },
+        { label: 'Error Reduction', value: '75%' }
+      ],
+      gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
+    },
+    {
+      title: 'AI-Powered Translator App',
+      category: 'AI',
+      tech: ['Firebase', 'React.js', 'FastAPI '],
+      description: '  Built a full-stack AI-powered translation platform enabling real-time multilingual text translation, word meaning retrieval, and document parsing (PDF, DOCX, TXT) using React and FastAPI.',
+      metrics: [
+        { label: 'Success Rate', value: '99%' },
+        { label: 'Auth Types', value: 'Pydantic' },
+        { label: 'Users', value: '100+' },
+        { label: 'Error Reduction', value: '85%' }
+      ],
+      gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
+    },
+    {
+      title: 'Local PDF Chatbot ',
+      category: 'AI',
+      tech: ['Streamlit', 'Langchain', 'FastAPI ','FAISS','Ollama'],
+      description: '  Built a fully offline AI-powered PDF chatbot using RAG pipeline with FAISS vector search, LangChain for private document Q&A without internet connectivity, featuring persistent chat history and multi-format support (PDF, DOCX).',
+      metrics: [
+        { label: 'Success Rate', value: '99%' },
+        { label: 'AI Model', value: 'Phi-4' },
+        { label: 'Users', value: '50+' },
+        { label: 'Error Reduction', value: '85%' }
+      ],
+      gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
+    },
+    
   ];
 
   const skills = [
@@ -278,7 +331,7 @@ export default function Portfolio() {
             <div style={{ width: '6rem', height: '4px', background: 'linear-gradient(to right, #7c3aed, #ec4899)', margin: '0 auto 2rem' }} />
 
             <div style={{ display: 'inline-flex', backgroundColor: '#ffffff', borderRadius: '9999px', padding: '0.25rem', boxShadow: '0 10px 15px rgba(0,0,0,0.1)' }}>
-              {['all', 'fullstack', 'frontend', 'backend'].map(tab => (
+              {['all', 'fullstack', 'frontend', 'AI'].map(tab => (
                 <button
                   key={tab}
                   onClick={() => setActiveTab(tab)}

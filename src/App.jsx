@@ -68,19 +68,7 @@ export default function Portfolio() {
       ],
       gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
     },
-    {
-      title: 'GVR Grill Works- Business Portfolio',
-      category: 'frontend',
-      tech: ['Firebase', 'React.js', 'OAuth 2.0'],
-      description: ' Designed and deployed a responsive business website with structured navigation, gallery sections, and Google Maps integration to improve user engagement.',
-      metrics: [
-        { label: 'Success Rate', value: '99%' },
-        { label: 'Auth Types', value: 'OAuth 2.0' },
-        { label: 'Users', value: '500+' },
-        { label: 'Error Reduction', value: '75%' }
-      ],
-      gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
-    },
+    
     {
       title: 'GVR Grill Works- Business Portfolio',
       category: 'frontend',
@@ -242,7 +230,7 @@ export default function Portfolio() {
             <div style={{ backgroundColor: '#ffffff', padding: '2rem', borderRadius: '1rem', boxShadow: '0 10px 15px rgba(0,0,0,0.1)' }}>
               <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem', color: '#7c3aed' }}>My Story</h3>
               <p style={{ color: '#374151', lineHeight: 1.75, marginBottom: '1rem' }}>
-                I'm a passionate developer currently pursuing my final year in Computer Science Engineering at SACS MAVMM Engineering College. My journey in tech is driven by a desire to create elegant solutions to complex problems.
+                I'm a passionate developer who enjoys turning complex problems into clean, simple, and elegant solutions. I love building things that actually work (and sometimes even on the first try 😄). Always curious, always learning, and always coding.
               </p>
               <p style={{ color: '#374151', lineHeight: 1.75 }}>
                 I specialize in building modern web applications with React.js and FastAPI, focusing on performance, security, and user experience. Every project is an opportunity to learn and push the boundaries of what's possible.
@@ -253,7 +241,7 @@ export default function Portfolio() {
               <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem', color: '#7c3aed' }}>What I Do</h3>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem' }}>
                 {[
-                  { icon: '💻', title: 'Frontend Development', desc: 'React.js, JavaScript, Responsive UI' },
+                  { icon: '💻', title: 'Frontend Development', desc: 'React.js, Responsive UI' },
                   { icon: '🖥️', title: 'Backend Development', desc: 'Python, FastAPI, REST APIs' },
                   { icon: '🗄️', title: 'Database Design', desc: 'PostgreSQL, Firebase' },
                   { icon: '⚡', title: 'API Development', desc: 'RESTful, Authentication, OAuth' }
@@ -274,7 +262,7 @@ export default function Portfolio() {
                 <h4 style={{ fontWeight: 700, marginBottom: '1rem', color: '#7c3aed' }}>Contact Info</h4>
                 {[
                   { icon: '📍', label: 'Location', value: 'Madurai, Tamil Nadu' },
-                  { icon: '✉️', label: 'Email', value: 'vishalvadivel2904@gmail.com' },
+                  { icon: '✉️', label: 'Email', value: 'vishalraghavan2904@gmail.com' },
                   { icon: '📞', label: 'Phone', value: '+91 9790557118' }
                 ].map((info, i) => (
                   <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>

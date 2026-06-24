@@ -68,7 +68,7 @@ export default function Portfolio() {
       ],
       gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
     },
-    
+
     {
       title: 'GVR Grill Works- Business Portfolio',
       category: 'frontend',
@@ -98,7 +98,7 @@ export default function Portfolio() {
     {
       title: 'Local PDF Chatbot ',
       category: 'AI',
-      tech: ['Streamlit', 'Langchain', 'FastAPI ','FAISS','Ollama'],
+      tech: ['Streamlit', 'Langchain', 'FastAPI ', 'FAISS', 'Ollama'],
       description: '  Built a fully offline AI-powered PDF chatbot using RAG pipeline with FAISS vector search, LangChain for private document Q&A without internet connectivity, featuring persistent chat history and multi-format support (PDF, DOCX).',
       metrics: [
         { label: 'Success Rate', value: '99%' },
@@ -108,35 +108,36 @@ export default function Portfolio() {
       ],
       gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
     },
-    
+
   ];
 
   const skills = [
-    { name: 'React.js', category: 'Frontend', level: 90 },
-    { name: 'JavaScript', category: 'Frontend', level: 85 },
-    { name: 'Python', category: 'Backend', level: 90 },
-    { name: 'FastAPI', category: 'Backend', level: 85 },
-    { name: 'PostgreSQL', category: 'Database', level: 80 },
-    { name: 'Firebase', category: 'Database', level: 75 },
-    { name: 'REST API', category: 'Backend', level: 88 },
-    { name: 'Git/GitHub', category: 'Tools', level: 85 }
+    { category: 'Programming Languages', items: 'C, Python, JavaScript (ES6+)' },
+    { category: 'Frontend Technologies', items: 'HTML5, CSS3, Bootstrap, React.js (Hooks, Router)' },
+    { category: 'Backend Technologies', items: 'FastAPI, Django, REST API, SQLAlchemy (ORM), Pydantic, CRUD Operations' },
+    { category: 'Databases', items: 'PostgreSQL, MySQL, ChromaDB (VectorDB), Redis' },
+    { category: 'AI/ML', items: 'RAG Pipeline, LLM Architecture, NLP, LangChain, FAISS, Streamlit' },
+    { category: 'Authentication & Security', items: 'OAuth 2.0, JWT, Role-Based Access Control (RBAC)' },
+    { category: 'Cloud & DevOps', items: 'AWS (EC2, S3), Firebase, Render, Vercel, Docker, CI/CD Pipeline, Git, GitHub' },
+    { category: 'Testing & Tools', items: 'Postman, Pytest, Unit Testing, VS Code, Ollama' },
   ];
 
   const achievements = [
     {
+      title: '24-Hour Hackathon',
+      organization: 'Google Developer Group',
+      date: ' April 2025',
+      description: 'Competed with 50+ teams on sustainable development goals',
+      color: '#eab308'
+    },
+    {
       title: 'Django REST API Workshop',
-      organization: 'AAA College',
+      organization: 'AAA College of Engineering and Technology',
       date: 'October 2024',
       description: 'Built 5+ working endpoints in 8-hour intensive workshop',
       color: '#3b82f6'
     },
-    {
-      title: '24-Hour Hackathon',
-      organization: 'Google Developer Group',
-      date: '2024',
-      description: 'Competed with 50+ teams on sustainable development goals',
-      color: '#eab308'
-    },
+
     {
       title: 'TechFusion Workshop',
       organization: 'Thiagarajar College',
@@ -150,7 +151,8 @@ export default function Portfolio() {
       date: 'March 2024',
       description: 'Modern JavaScript frameworks and best practices',
       color: '#10b981'
-    }
+    },
+
   ];
 
   const filteredProjects = activeTab === 'all' ? projects : projects.filter(p => p.category === activeTab);
@@ -170,22 +172,22 @@ export default function Portfolio() {
             </div>
 
             <h1 style={{ fontSize: '3rem', fontWeight: 700, lineHeight: 1.2, marginBottom: '1.5rem' }}>
-              Hi, I'm <br/>
+              Hi, I'm <br />
               <span style={{ background: 'linear-gradient(to right, #7c3aed, #ec4899)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
                 Vishal V
               </span>
             </h1>
 
             <p style={{ fontSize: '1.5rem', color: '#374151', marginBottom: '1rem', fontWeight: 500 }}>
-              Python Full Stack Developer
+              AI Full Stack Developer | Generative AI
             </p>
 
             <p style={{ fontSize: '1.125rem', color: '#6b7280', marginBottom: '2rem', lineHeight: 1.75 }}>
-              Final year CS student specializing in React.js and FastAPI. I build scalable web applications with clean code and exceptional user experiences.
+              Computer Science and Engineering graduate specializing in React.js, FastAPI, and Generative AI. I develop scalable web applications and AI-powered solutions with clean architecture, efficient performance, and exceptional user experiences.
             </p>
 
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', marginBottom: '2rem' }}>
-              <a href="mailto:vishalvadivel2904@gmail.com" style={{ padding: '1rem 2rem', background: 'linear-gradient(to right, #7c3aed, #a855f7)', color: '#ffffff', borderRadius: '9999px', fontWeight: 600, textDecoration: 'none' }}>
+              <a href="mailto:vishalraghavan2904@gmail.com" style={{ padding: '1rem 2rem', background: 'linear-gradient(to right, #7c3aed, #a855f7)', color: '#ffffff', borderRadius: '9999px', fontWeight: 600, textDecoration: 'none' }}>
                 Get In Touch
               </a>
               <a href="#projects" style={{ padding: '1rem 2rem', backgroundColor: '#ffffff', border: '2px solid #d1d5db', borderRadius: '9999px', fontWeight: 600, textDecoration: 'none', color: '#111827' }}>
@@ -196,27 +198,12 @@ export default function Portfolio() {
             <div style={{ display: 'flex', gap: '1rem' }}>
               <a href="https://github.com/Vishal29-git" target="_blank" rel="noopener noreferrer" style={{ width: '48px', height: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#ffffff', borderRadius: '9999px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)', textDecoration: 'none', fontSize: '20px' }}><i className="fa-brands fa-github"></i></a>
               <a href="https://linkedin.com/in/vishal-29-v" target="_blank" rel="noopener noreferrer" style={{ width: '48px', height: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#ffffff', borderRadius: '9999px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)', textDecoration: 'none', fontSize: '20px' }}> <i className="fa-brands fa-linkedin-in"></i></a>
-              <a href="mailto:vishalvadivel2904@gmail.com" style={{ width: '48px', height: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#ffffff', borderRadius: '9999px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)', textDecoration: 'none', fontSize: '20px' }}><i className="fa-solid fa-envelope"></i></a>
+              <a href="mailto:vishalraghavan2904@gmail.com" style={{ width: '48px', height: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#ffffff', borderRadius: '9999px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)', textDecoration: 'none', fontSize: '20px' }}><i className="fa-solid fa-envelope"></i></a>
             </div>
           </div>
         </div>
 
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '3rem 2rem', backgroundColor: '#ffffff' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '1.5rem', maxWidth: '600px', width: '100%' }}>
-            {[
-              { value: '8.5', label: 'CGPA', desc: 'Top 15%', gradient: 'linear-gradient(to bottom right, #7c3aed, #a855f7)' },
-              { value: '4+', label: 'Projects', desc: 'Full Stack', gradient: 'linear-gradient(to bottom right, #ec4899, #f43f5e)' },
-              { value: '100+', label: 'Users', desc: 'Active', gradient: 'linear-gradient(to bottom right, #059669, #14b8a6)' },
-              { value: '150ms', label: 'Speed', desc: 'API', gradient: 'linear-gradient(to bottom right, #d97706, #f97316)' }
-            ].map((stat, i) => (
-              <div key={i} style={{ background: stat.gradient, padding: '1.5rem', borderRadius: '1.5rem', color: '#ffffff', boxShadow: '0 20px 25px rgba(0,0,0,0.1)' }}>
-                <div style={{ fontSize: '2rem', fontWeight: 700, marginBottom: '0.5rem' }}>{stat.value}</div>
-                <div style={{ opacity: 0.9, fontSize: '0.9rem' }}>{stat.label}</div>
-                <div style={{ fontSize: '0.75rem', opacity: 0.8, marginTop: '0.25rem' }}>{stat.desc}</div>
-              </div>
-            ))}
-          </div>
-        </div>
+        
       </section>
 
       <section style={{ padding: '5rem 2rem', backgroundColor: '#f9fafb' }}>
@@ -233,7 +220,7 @@ export default function Portfolio() {
                 I'm a passionate developer who enjoys turning complex problems into clean, simple, and elegant solutions. I love building things that actually work (and sometimes even on the first try 😄). Always curious, always learning, and always coding.
               </p>
               <p style={{ color: '#374151', lineHeight: 1.75 }}>
-                I specialize in building modern web applications with React.js and FastAPI, focusing on performance, security, and user experience. Every project is an opportunity to learn and push the boundaries of what's possible.
+                I specialize in building modern web applications with React.js, FastAPI and Generative AI, focusing on performance, security, and user experience. Every project is an opportunity to learn and push the boundaries of what's possible.
               </p>
             </div>
 
@@ -244,7 +231,10 @@ export default function Portfolio() {
                   { icon: '💻', title: 'Frontend Development', desc: 'React.js, Responsive UI' },
                   { icon: '🖥️', title: 'Backend Development', desc: 'Python, FastAPI, REST APIs' },
                   { icon: '🗄️', title: 'Database Design', desc: 'PostgreSQL, Firebase' },
-                  { icon: '⚡', title: 'API Development', desc: 'RESTful, Authentication, OAuth' }
+                  { icon: '⚡', title: 'API Development', desc: 'RESTful, Authentication, OAuth' },
+                  { icon: '🤖', title: 'AI Solutions', desc: 'Generative AI, RAG, LangChain' },
+                  { icon: '🔧', title: 'DevOps & Tools', desc: 'Git, Docker, CI/CD' },
+
                 ].map((service, i) => (
                   <div key={i} style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
                     <div style={{ fontSize: '1.5rem' }}>{service.icon}</div>
@@ -297,14 +287,11 @@ export default function Portfolio() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem' }}>
             {skills.map((skill, i) => (
               <div key={i} style={{ backgroundColor: '#f9fafb', padding: '1.5rem', borderRadius: '1rem' }}>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem' }}>
-                  <span style={{ fontSize: '1.5rem' }}>💻</span>
-                  <span style={{ fontSize: '1.5rem', fontWeight: 700, color: '#d1d5db' }}>{skill.level}%</span>
+                <div style={{ fontSize: '0.75rem', fontWeight: 600, color: '#6b7280', letterSpacing: '0.05em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>
+                  {skill.category}
                 </div>
-                <div style={{ fontWeight: 700, fontSize: '1.125rem', marginBottom: '0.25rem' }}>{skill.name}</div>
-                <div style={{ fontSize: '0.875rem', color: '#6b7280', marginBottom: '1rem' }}>{skill.category}</div>
-                <div style={{ width: '100%', backgroundColor: '#e5e7eb', borderRadius: '9999px', height: '8px' }}>
-                  <div style={{ background: 'linear-gradient(to right, #7c3aed, #a855f7)', height: '8px', borderRadius: '9999px', width: skill.level + '%' }} />
+                <div style={{ fontWeight: 700, fontSize: '1rem', color: '#111827', lineHeight: '1.6' }}>
+                  {skill.items}
                 </div>
               </div>
             ))}
@@ -346,7 +333,7 @@ export default function Portfolio() {
                 <div style={{ height: '8px', background: project.gradient }} />
                 <div style={{ padding: '2rem' }}>
                   <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.75rem' }}>{project.title}</h3>
-                  
+
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1rem' }}>
                     {project.tech.map((tech, j) => (
                       <span key={j} style={{ padding: '0.25rem 0.75rem', backgroundColor: '#f3f4f6', color: '#374151', borderRadius: '9999px', fontSize: '0.875rem', fontWeight: 500 }}>
@@ -420,9 +407,7 @@ export default function Portfolio() {
             </a>
           </div>
 
-          <div style={{ borderTop: '1px solid rgba(124, 58, 237, 0.3)', paddingTop: '2rem' }}>
-            <p style={{ opacity: 0.9 }}>📞 +91 9790557118</p>
-          </div>
+          
         </div>
       </section>
 

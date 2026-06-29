@@ -112,17 +112,25 @@ export default function Portfolio() {
   ];
 
   const skills = [
-    { category: 'Programming Languages', items: 'C, Python, JavaScript (ES6+)' },
-    { category: 'Frontend Technologies', items: 'HTML5, CSS3, Bootstrap, React.js (Hooks, Router)' },
-    { category: 'Backend Technologies', items: 'FastAPI, Django, REST API, SQLAlchemy (ORM), Pydantic, CRUD Operations' },
+    { category: 'Programming Languages', items: 'Python, Java, JavaScript (ES6+)' },
+    { category: 'Frontend Technologies', items: 'HTML5, CSS3, Bootstrap, React.js ' },
+    { category: 'Backend Technologies', items: 'FastAPI, Django, SQLAlchemy (ORM)' },
     { category: 'Databases', items: 'PostgreSQL, MySQL, ChromaDB (VectorDB), Redis' },
-    { category: 'AI/ML', items: 'RAG Pipeline, LLM Architecture, NLP, LangChain, FAISS, Streamlit' },
-    { category: 'Authentication & Security', items: 'OAuth 2.0, JWT, Role-Based Access Control (RBAC)' },
-    { category: 'Cloud & DevOps', items: 'AWS (EC2, S3), Firebase, Render, Vercel, Docker, CI/CD Pipeline, Git, GitHub' },
-    { category: 'Testing & Tools', items: 'Postman, Pytest, Unit Testing, VS Code, Ollama' },
+    { category: 'AI/ML', items: 'RAG Pipeline, LLM Architecture, NLP, LangChain, FAISS, Streamlit, Ollama' },
+
+    { category: 'Cloud & DevOps', items: 'AWS (EC2, S3), Firebase,Supabase, Render, Vercel, Docker, CI/CD Pipeline, Git, GitHub' },
+    { category: 'Testing & Tools', items: 'Postman, Pytest, Unit Testing, VS Code' },
   ];
 
   const achievements = [
+    {
+      title: 'AI Fluency Framework & Foundations',
+      organization: 'Anthropic Courses',
+      date: 'June 2026',
+      description: 'Completed a structured program covering foundational principles and frameworks of Artificial Intelligence',
+      color: '#ea6208'
+    },
+
     {
       title: '24-Hour Hackathon',
       organization: 'Google Developer Group',
@@ -203,7 +211,7 @@ export default function Portfolio() {
           </div>
         </div>
 
-        
+
       </section>
 
       <section style={{ padding: '5rem 2rem', backgroundColor: '#f9fafb' }}>
@@ -407,7 +415,7 @@ export default function Portfolio() {
             </a>
           </div>
 
-          
+
         </div>
       </section>
 

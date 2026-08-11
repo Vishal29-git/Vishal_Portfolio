@@ -108,6 +108,19 @@ export default function Portfolio() {
       ],
       gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
     },
+    {
+      title: 'BulkFit AI– AI ATS Resume Screener  ',
+      category: 'AI',
+      tech: [' React.js', 'FastAPI', 'Ollama', 'SQLite', 'SMTP'],
+      description: '   Evaluated 20+ candidate resumes per JD by extracting profile links, calculating match scores with 90%+ precision,generating AI summaries in 15s, and automating email notifications for shortlisted and rejected applicants– reducingrecruiter manual screening time by 80%.',
+      metrics: [
+        { label: 'Success Rate', value: '99%' },
+        { label: 'AI Model', value: 'Qwen2.5:3b' },
+        { label: 'Resumes Evaluated', value: '20+' },
+        { label: 'Reducing Manual Work', value: '85%' }
+      ],
+      gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
+    },
 
   ];
 
@@ -128,13 +141,13 @@ export default function Portfolio() {
       organization: 'Anthropic Courses',
       date: 'June 2026',
       description: 'Completed a structured program covering foundational principles and frameworks of Artificial Intelligence',
-      color: '#ea6208'
+      color: '#ea6208',
     },
 
     {
       title: '24-Hour Hackathon',
       organization: 'Google Developer Group',
-      date: ' April 2025',
+      date: 'April 2025',
       description: 'Competed with 50+ teams on sustainable development goals',
       color: '#eab308'
     },

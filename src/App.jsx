@@ -1,17 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import myPhoto from './assets/mypic.png';
+import myPhoto from './assets/mypic.png'; 
 
-// ============================================================
-// THEME: Navy + White + Sky-Cyan
-// navy: #0F172A | white: #FFFFFF | off-white: #F8FAFC
-// border: #E2E8F0 | accent: #0EA5E9 | accent-soft: #E0F2FE
-// muted: #64748B
-// ============================================================
 
-// ============================================================
-// PASTE YOUR CREDENTIAL / CERTIFICATE URLS HERE
-// Replace each "#" below with the real link (Drive, Credly, GitHub repo, live deploy, etc.)
-// ============================================================
 const CREDENTIAL_URLS = {
   internshipCertificate: 'https://drive.google.com/file/d/13xjnnN3huNiS5zht-nt83Wyj6_d9PsnM/view?usp=drive_link', // Elevance Skills internship certificate URL
   achievements: {
@@ -33,7 +23,7 @@ const CREDENTIAL_URLS = {
     gvrGrillWorks: { live: 'https://gvr-grill-8qop.vercel.app/', github: 'https://github.com/Vishal29-git/GVR-Grill' },
   },
 };
-// ============================================================
+
 
 const FONT_IMPORT_URL =
   'https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap';
@@ -101,8 +91,9 @@ const SKILL_GROUPS = [
       { name: 'LangChain', icon: 'devicon-python-plain ' },
       { name: 'FAISS', icon: 'devicon-python-plain colored' },
       { name: 'Ollama', icon: 'devicon-python-plain ' },
-      { name: 'RAG', icon: 'devicon-python-plain colored' },
-      { name: 'LLM', icon: 'devicon-python-plain ' },
+      { name: 'Streamlit', icon: 'devicon-python-plain colored' },
+      { name: 'RAG', icon: 'devicon-python-plain ' },
+      { name: 'LLM', icon: 'devicon-python-plain colored' },
     ],
   },
   {
@@ -117,7 +108,6 @@ const SKILL_GROUPS = [
       { name: 'Render', icon: 'devicon-heroku-original' },
       { name: 'Firebase', icon: 'devicon-firebase-plain colored' },
       { name: 'Supabase', icon: 'devicon-supabase-plain colored' },
-      
     ],
   },
   {
@@ -432,6 +422,7 @@ export default function Portfolio() {
 
         @media (max-width: 768px) {
           .desktop-nav { display: none !important; }
+          .mobile-menu-btn { display: flex !important; }
           .hero-title { font-size: 2.3rem !important; }
           .section-pad { padding: 3.25rem 1.25rem !important; }
           .story-content-grid { grid-template-columns: 1fr !important; }
@@ -480,7 +471,7 @@ export default function Portfolio() {
             >
               Contact
             </button>
-            <button onClick={() => setMenuOpen(!menuOpen)} style={styles.hamburger}>
+            <button onClick={() => setMenuOpen(!menuOpen)} className="mobile-menu-btn" style={styles.hamburger}>
               <span style={styles.hamburgerBar} />
               <span style={styles.hamburgerBar} />
               <span style={styles.hamburgerBar} />
@@ -584,9 +575,9 @@ export default function Portfolio() {
             <div className="story-content-grid" style={styles.storyGrid}>
               <div style={styles.storyImageWrapper}>
                 <div style={styles.storyImageCard}>
-                  {/* Avatar/Picture Placeholder */}
+                  {/* Profile Photo */}
                   <div style={styles.photoContainer}>
-                    <img src={myPhoto} alt="Your Photo" style={styles.photo} />
+                    <img src={myPhoto} alt="Vishal V" style={styles.photoImage} />
                   </div>
                   <div style={styles.experienceBadge}>
                     <span style={styles.badgeNumber}>2026</span>
@@ -626,7 +617,7 @@ export default function Portfolio() {
               <div>
                 <div style={styles.eduHeading}>Education</div>
                 <div style={styles.eduDegree}>B.E. Computer Science and Engineering</div>
-                <div style={styles.eduSchool}>SACS MAVMM Engineering College</div>
+                <div style={styles.eduSchool}>SACS MAVMM Engineering College - Madurai</div>
               </div>
             </div>
             <div style={styles.eduFooterRow}>
@@ -951,10 +942,10 @@ const styles = {
     borderRadius: '999px', fontWeight: 600, fontSize: '0.9rem',
   },
   hamburger: {
-    display: 'none', flexDirection: 'column', gap: '4px',
+    display: 'none', flexDirection: 'column', gap: '4px', alignItems: 'center',
     background: 'transparent', border: 'none', cursor: 'pointer', padding: '0.4rem',
   },
-  hamburgerBar: { width: '22px', height: '2px', background: '#0F172A' },
+  hamburgerBar: { width: '5px', height: '5px', borderRadius: '50%', background: '#0F172A' },
   mobileMenu: {
     display: 'flex', flexDirection: 'column', padding: '1rem 1.5rem 1.5rem',
     gap: '1rem', borderTop: '1px solid #E2E8F0',
@@ -1056,6 +1047,13 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     boxShadow: '0 12px 20px -8px rgba(14,165,233,0.25)',
+    overflow: 'hidden',
+  },
+  photoImage: {
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+    borderRadius: '22px',
   },
   experienceBadge: {
     position: 'absolute',

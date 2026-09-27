@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import myPhoto from './assets/mypic.png'; 
+import myPhoto from './assets/mypic.png';
 
 
 const CREDENTIAL_URLS = {
@@ -10,17 +10,18 @@ const CREDENTIAL_URLS = {
     djangoWorkshop: 'https://drive.google.com/file/d/1R4LwSO9vrK2YE8g1InM_3LYYAbAlfSLd/view',   // Django REST API Workshop certificate URL
     techFusion: 'https://drive.google.com/file/d/1R6x6dIMdWWfptxEYmvkXhIkjqE8Ecoar/view',       // TechFusion Workshop certificate URL
     webDevWorkshop: 'https://drive.google.com/file/d/1R6nq4_Ub3HM0f2WeoSO2dU3pp23XL0fm/view',   // NIT Trichy Web Development Workshop certificate URL
-    naanMudhalvanRPA:'https://drive.google.com/file/d/1RVrJw9czvwjsVI_n_c0jCLGbOa8xO9Is/view'
+    naanMudhalvanRPA: 'https://drive.google.com/file/d/1RVrJw9czvwjsVI_n_c0jCLGbOa8xO9Is/view'
   },
   projects: {
     bulkfitAI: { github: 'https://github.com/Vishal29-git/BulkFit-AI--Resume_Screener' },
     pdfChatbot: { live: '#', github: 'https://github.com/Vishal29-git/LocalPDFChatbot' },
     aiTranslator: { live: '#', github: 'https://github.com/SanjayChellapandi/translator-web-app' },
-    todoApp: {  github: '' },
+    todoApp: { github: '' },
     productHub: { github: 'https://github.com/Vishal29-git/ProductHub' },
     memoryGame: { live: 'https://memory-card-game-drab-eta.vercel.app/', github: 'https://github.com/Vishal29-git/MemoryCardGame' },
     firebaseAuth: { live: 'https://my-login-app-518df.web.app/', github: 'https://github.com/Vishal29-git/FASTAPI-TODOLIST' },
     gvrGrillWorks: { live: 'https://gvr-grill-8qop.vercel.app/', github: 'https://github.com/Vishal29-git/GVR-Grill' },
+    multiAgentResearch: { live: '#', github: 'https://github.com/Vishal29-git/Multi-Agent-Research-System.git' },
   },
 };
 
@@ -71,7 +72,7 @@ const SKILL_GROUPS = [
       { name: 'Django', icon: 'devicon-django-plain colored' },
       { name: 'PostgreSQL', icon: 'devicon-postgresql-plain colored' },
       { name: 'MySQL', icon: 'devicon-mysql-plain colored' },
-      
+
     ],
   },
   {
@@ -137,6 +138,17 @@ const EXPERIENCE = [
 ];
 
 const PROJECTS = [
+
+  {
+    key: 'multiAgentResearch',
+    title: 'AI Research Lab',
+    subtitle: 'Multi-Agent Research System',
+    category: 'ai',
+    tech: ['React.js', 'FastAPI', 'LangGraph', 'LangChain', 'Ollama', 'FAISS', 'SQLite'],
+    description:
+      'Orchestrates 6 specialized AI agents to research, verify, analyze, and synthesize 30+ sources into comprehensive reports with automated fact-checking, evidence tracking, and citation-backed findings.',
+  },
+
   {
     key: 'bulkfitAI',
     title: 'BulkFit AI',
@@ -205,7 +217,7 @@ const PROJECTS = [
     title: 'GVR Grill Works',
     subtitle: 'Business Portfolio Site',
     category: 'frontend',
-    tech: ['React.js', 'Firebase'],
+    tech: ['React.js', 'Firebase','Google Map Integration'],
     description:
       'Responsive business website with structured navigation, gallery sections, and Google Maps integration to improve customer engagement.',
   },
@@ -443,7 +455,7 @@ export default function Portfolio() {
                 V
               </span>
             </div>
-            <span style={styles.brandName}>Vishal<span style={{ color: '#0EA5E9' }}>.</span></span>
+            
           </div>
 
           <div className="desktop-nav" style={styles.navLinks}>
@@ -514,7 +526,7 @@ export default function Portfolio() {
             Hi, I'm <span style={{ color: '#0EA5E9' }}>Vishal V</span>
           </h1>
 
-          <p style={styles.heroRole}>AI Full-Stack Developer · Generative AI</p>
+          <p style={styles.heroRole}>AI Full-Stack Developer | Generative AI</p>
 
           <p style={styles.heroSub}>
             Computer Science and Engineering graduate specializing in React.js, FastAPI, and
@@ -590,7 +602,7 @@ export default function Portfolio() {
                 <p style={styles.paragraph}>
                   I'm a passionate developer who enjoys turning complex problems into clean, simple,
                   and elegant solutions. I love building things that actually work — and sometimes
-                  even on the first try. Always curious, always learning, always coding.
+                  even on the first try. Experienced in building scalableand reliable web applications integrated with Generative AI for modern full-stack development.
                 </p>
                 <p style={styles.paragraph}>
                   I specialize in building modern web applications with React.js, FastAPI, and
@@ -599,7 +611,7 @@ export default function Portfolio() {
                 <div style={styles.highlightsRow}>
                   <div style={styles.highlightChip}>🚀 Full-Stack Dev</div>
                   <div style={styles.highlightChip}>🤖 AI Integration</div>
-                  <div style={styles.highlightChip}>⚡ Fast APIs</div>
+                  <div style={styles.highlightChip}>⚡ AI Agent</div>
                 </div>
               </div>
             </div>
